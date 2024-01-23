@@ -2,7 +2,7 @@
 
 namespace FinFocus.Domain.Common
 {
-    public class Enumeration
+    public abstract class Enumeration
     {
         public string Name { get; private set; }
 
@@ -19,7 +19,9 @@ namespace FinFocus.Domain.Common
                      .Select(f => f.GetValue(null))
                      .Cast<T>();
 
+        #pragma warning disable CS8765 
         public override bool Equals(object obj)
+        #pragma warning restore CS8765 
         {
             if (obj is not Enumeration otherValue)
             {

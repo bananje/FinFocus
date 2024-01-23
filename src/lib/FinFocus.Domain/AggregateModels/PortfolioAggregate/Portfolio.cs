@@ -2,7 +2,7 @@
 
 namespace FinFocus.Domain.AggregateModels.PortfolioAggregate
 {
-    internal class Portfolio
+    public class Portfolio
     {
         private readonly HashSet<IAsset> _assets = new();
 
@@ -56,6 +56,9 @@ namespace FinFocus.Domain.AggregateModels.PortfolioAggregate
         /// </summary>
         public IReadOnlyCollection<IAsset> Assets => _assets;
 
-        public Portfolio() { }
+        public Portfolio()
+        {
+            
+        }
     }
 }

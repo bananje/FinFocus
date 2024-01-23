@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FinFocus.Domain.EnumerationModels
+﻿namespace FinFocus.Domain.EnumerationModels
 {
-    internal class Security
+    public class Security
     {
     }
 }

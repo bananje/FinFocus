@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FinFocus.Domain.Common;
 
 namespace FinFocus.Domain.EnumerationModels
 {
-    internal class BondType
+    public partial class BondType : Enumeration
     {
+        
     }
 }
